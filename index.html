@@ -6,10 +6,27 @@
     <title>assignment-5</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+</style>
 </head>
-<body class="bg-red-600">
-   <section class="max-w-screen-xl min-h-screen  mx-auto  bg-gray-400  gap-4  rounded-lg">
+<body id="bodyColor">
+   <section class="max-w-screen-xl min-h-screen  mx-auto  bg-gray-100  gap-4  rounded-lg">
     
     
         <header 
@@ -28,7 +45,12 @@
                 <div class="flex space-x-2 items-center">
                 <img class="p-3" src="A5-Dev-Board/assets/checkbox.png" alt="">
                 <span class="font-bold">23</span>
-                <img class="p-4" src="A5-Dev-Board/assets/theme-btn.png" alt="">
+               <div class="" id="changeColorBodyBtn">
+                <img
+                id="changeColorBtn"
+                class="p-4" 
+               src="A5-Dev-Board/assets/theme-btn.png" alt="">
+               </div>
                 </div>
         
             </div>
@@ -63,9 +85,9 @@
                   </div>
                  </div>
                  <!-- main section -->
-                  <div class="shadow-sm bg-slate-300 p-2 mt-3 grid grid-cols-3 gap-4 rounded-md">
+                  <div class="shadow-sm bg-slate-100 p-2 mt-3 grid grid-cols-3 gap-4 rounded-md">
                   <!-- first box -->
-                   <div class="bg-slate-400 shadow-md rounded-md p-6">
+                   <div class="bg-slate-300 shadow-md rounded-md p-6">
                      <div class="">
                          <button class=" rounded-lg py-2 px-4 font-bold text-sm text-[#00303c] bg-slate-100">ShopEase</button>
                         <h3 class="font-medium text-2xl text-[#00303C] mt-2">Fix Mobile Button Issue </h3>
@@ -75,11 +97,13 @@
                        <div class="flex justify-between space-y-4 ">
                        <h1 class="text-[#00303c] font-normal text-sm mb-2 items-center justify-center ">Deadline <br> <span class="font-medium text-lg "> 21 March 2025</span></h1>
                        <!-- completed button -->
-                        <button class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-3 px-5 rounded-lg">Completed</button>
+                        <button 
+                        
+                        class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-2 px-5 rounded-lg   thisIsButton ">Completed</button>
                        </div>
                    </div>
                   <!-- 2 box -->
-                   <div class="bg-slate-400 shadow-md rounded-md p-6">
+                   <div class="bg-slate-300 shadow-md rounded-md p-6">
                      <div class="">
                          <button class=" rounded-lg py-2 px-4 font-bold text-sm text-[#00303c] bg-slate-100">CloudSync</button>
                         <h3 class="font-medium text-2xl text-[#00303C] mt-2">Add Dark Mode </h3>
@@ -88,11 +112,14 @@
                        <div class="flex justify-between space-y-4 ">
                        <h1 class="text-[#00303c] font-normal text-sm mb-2 items-center justify-center ">Deadline <br> <span class="font-medium text-lg "> 21 March 2025</span></h1>
                        <!-- completed button -->
-                        <button class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-3 px-5 rounded-lg">Completed</button>
+                        <button 
+                        
+
+                         class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-2 px-5 rounded-lg  thisIsButton ">Completed</button>
                        </div>
                    </div>
                   <!--3 box -->
-                   <div class="bg-slate-400 shadow-md rounded-md p-6">
+                   <div class="bg-slate-300 shadow-md rounded-md p-6">
                      <div class="">
                          <button class=" rounded-lg py-2 px-4 font-bold text-sm text-[#00303c] bg-slate-100">SwiftPay</button>
                         <h3 class="font-medium text-2xl text-[#00303C] mt-2">Optimize  Home page  </h3>
@@ -102,11 +129,13 @@
                        <div class="flex justify-between space-y-4 ">
                        <h1 class="text-[#00303c] font-normal text-sm mb-2 items-center justify-center ">Deadline <br> <span class="font-medium text-lg "> 21 March 2025</span></h1>
                        <!-- completed button -->
-                        <button class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-3 px-5 rounded-lg">Completed</button>
+                        <button 
+                      
+                        class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-2 px-5 rounded-lg   thisIsButton ">Completed</button>
                        </div>
                    </div>
                   <!-- 4 box -->
-                   <div class="bg-slate-400 shadow-md rounded-md p-6">
+                   <div class="bg-slate-300 shadow-md rounded-md p-6">
                      <div class="">
                          <button class=" rounded-lg py-2 px-4 font-bold text-sm text-[#00303c] bg-slate-100">Meta</button>
                         <h3 class="font-medium text-2xl text-[#00303C] mt-2">Add new emoji 🤲 </h3>
@@ -116,11 +145,14 @@
                        <div class="flex justify-between space-y-4 ">
                        <h1 class="text-[#00303c] font-normal text-sm mb-2 items-center justify-center ">Deadline <br> <span class="font-medium text-lg "> 21 March 2025</span></h1>
                        <!-- completed button -->
-                        <button class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-3 px-5 rounded-lg">Completed</button>
+                        <button
+                        
+
+                         class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-2 px-5 rounded-lg thisIsButton ">Completed</button>
                        </div>
                    </div>
                   <!-- 5 box -->
-                   <div class="bg-slate-400 shadow-md rounded-md p-6">
+                   <div class="bg-slate-300 shadow-md rounded-md p-6">
                      <div class="">
                          <button class=" rounded-lg py-2 px-4 font-bold text-sm text-[#00303c] bg-slate-100">Google LLC</button>
                         <h3 class="font-medium text-2xl text-[#00303C] mt-2">Integrate OpenAI API  </h3>
@@ -130,11 +162,13 @@
                        <div class="flex justify-between space-y-4 ">
                        <h1 class="text-[#00303c] font-normal text-sm mb-2 items-center justify-center ">Deadline <br> <span class="font-medium text-lg "> 21 March 2025</span></h1>
                        <!-- completed button -->
-                        <button class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-3 px-5 rounded-lg">Completed</button>
+                        <button
+                        
+                         class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-2 px-5 rounded-lg   thisIsButton  ">Completed</button>
                        </div>
                    </div>
                   <!-- 6 box- -->
-                   <div class="bg-slate-400 shadow-md rounded-md p-6">
+                   <div class="bg-slate-300 shadow-md rounded-md p-6">
                      <div class="">
                          <button class=" rounded-lg py-2 px-4 font-bold text-sm text-[#00303c] bg-slate-100">Glassdoar</button>
                         <h3 class="font-medium text-2xl text-[#00303C] mt-2">Improve Job searching  </h3>
@@ -144,7 +178,9 @@
                        <div class="flex justify-between space-y-4 ">
                        <h1 class="text-[#00303c] font-normal text-sm mb-2 items-center justify-center ">Deadline <br> <span class="font-medium text-lg "> 21 March 2025</span></h1>
                        <!-- completed button -->
-                        <button class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-3 px-5 rounded-lg">Completed</button>
+                        <button
+                        
+                         class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-2 px-5 rounded-lg   thisIsButton ">Completed</button>
                        </div>
                    </div>
                    
@@ -154,19 +190,21 @@
              <!-- 2nd dect -->
              
                 <div class="w-1/4 p-5 mr-3 shadow-md rounded-md bg-slate-300 ">
+                   <div class=" p-5 shadow-lg bg-slate-100 rounded-md ">
                     <div class="flex items-center justify-center text-center ">
-                        <img class="p-2"  src="A5-Dev-Board/assets/activity.png" alt="">
-                        <p class="text-[#00303C] font-medium text-sm">Activity Log</p>
-                        <br>
-                        
-                    </div>
-                    <div class="text-center items-center justify-center">
-                       <button
-                        class="text-[#ffffff] font-medium text-sm px-5 py-3 bg-[#3752FD] rounded-lg  "
-                       >Clear History</button>
-                    </div>
+                      <img class="p-2"  src="A5-Dev-Board/assets/activity.png" alt="">
+                      <p class="text-[#00303C] font-medium text-sm">Activity Log</p>
+                      <br>
+                      
+                  </div>
+                  <div class="text-center items-center justify-center ">
+                     <button
+                      class="text-[#ffffff] font-medium text-sm px-5 py-3 bg-[#3752FD] rounded-lg  "
+                     >Clear History</button>
+                  </div>
+                   </div>
                     <!-- comment option -->
-                    <div class=""></div>
+                    <div class=" mt-6 shadow-lg bg-slate-100 text-[#000000] text-sm font-bold rounded-md  ">dwerwewe</div>
                     
                 </div>
        
@@ -175,5 +213,8 @@
  
     
    </section>
+  
+
+   <script src="../script/script.js"></script>
 </body>
 </html>
