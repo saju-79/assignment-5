@@ -26,7 +26,7 @@
 </style>
 </head>
 <body id="bodyColor">
-   <section class="max-w-screen-xl min-h-screen  mx-auto  bg-gray-100  gap-4  rounded-lg">
+   <section class="max-w-screen-xl min-h-screen  mx-auto   gap-4  rounded-lg">
     
     
         <header 
@@ -44,7 +44,9 @@
             <!-- 2nd div -->
                 <div class="flex space-x-2 items-center">
                 <img class="p-3" src="A5-Dev-Board/assets/checkbox.png" alt="">
-                <span class="font-bold">23</span>
+                <span
+                id="navbar-number"
+                 class="font-bold">23</span>
                <div class="" id="changeColorBodyBtn">
                 <img
                 id="changeColorBtn"
@@ -55,22 +57,26 @@
         
             </div>
         </header>
-          <section class="flex p-2   rounded-sm px-16 py-2 ">
+          <section class="flex p-2   px-16 py-2 space-x-4 ">
             <!-- 1st dect -->
-             <div class="w-3/4 p-3">
+             <div class="w-3/4 p-3 bg-gray-100 shadow-md  rounded-md">
                  <!-- nav section -->
                  <div class=" flex space-x-3    ">
                     <!-- first 25% wight -->
-                    <div class="w-1/4-1 p-8 flex bg-slate-300 shadow-lg rounded-lg ">
+                    <div class="w-1/4-1 p-8 flex bg-slate-300 shadow-lg rounded-lg mr-3">
                        <div class=""><img class="p-3" src="A5-Dev-Board/assets/checkbox.png" alt=""></div>
                        <div class="">
                            <h1 class="font-medium text-sm text-[#00303C]">Task Assigned</h1>
-                           <span class="font-bold">05</span>
+                           <span
+                           id="main-number"
+                            class="font-bold">06</span>
                        </div>
                     </div>
                     <!-- 2nd 50% winth -->
                   
-                  <div class="w-1/2 bg-gradient-to-r from-[#3752FD] from-1% via-[#6C7FFA] via-53% to-[#9BA8F8] to-100% shadow-md py-5 px-10 flex items-center rounded-xl ">
+                  <div
+                  id="big-button"
+                   class="w-1/2 bg-gradient-to-r from-[#3752FD] from-1% via-[#6C7FFA] via-53% to-[#9BA8F8] to-100% shadow-md py-5 px-10 flex items-center rounded-xl ">
 
                       <img class="p-2" src="A5-Dev-Board/assets/board.png" alt="">
                       <h3 class="text-lg font-medium text-[#ffffff]">Discover Something  New Today!</h3>
@@ -98,7 +104,7 @@
                        <h1 class="text-[#00303c] font-normal text-sm mb-2 items-center justify-center ">Deadline <br> <span class="font-medium text-lg "> 21 March 2025</span></h1>
                        <!-- completed button -->
                         <button 
-                        
+                         id="complete-button"
                         class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-2 px-5 rounded-lg   thisIsButton ">Completed</button>
                        </div>
                    </div>
@@ -113,7 +119,7 @@
                        <h1 class="text-[#00303c] font-normal text-sm mb-2 items-center justify-center ">Deadline <br> <span class="font-medium text-lg "> 21 March 2025</span></h1>
                        <!-- completed button -->
                         <button 
-                        
+                         id="complete-button"
 
                          class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-2 px-5 rounded-lg  thisIsButton ">Completed</button>
                        </div>
@@ -130,7 +136,7 @@
                        <h1 class="text-[#00303c] font-normal text-sm mb-2 items-center justify-center ">Deadline <br> <span class="font-medium text-lg "> 21 March 2025</span></h1>
                        <!-- completed button -->
                         <button 
-                      
+                       id="complete-button"
                         class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-2 px-5 rounded-lg   thisIsButton ">Completed</button>
                        </div>
                    </div>
@@ -146,7 +152,7 @@
                        <h1 class="text-[#00303c] font-normal text-sm mb-2 items-center justify-center ">Deadline <br> <span class="font-medium text-lg "> 21 March 2025</span></h1>
                        <!-- completed button -->
                         <button
-                        
+                         id="complete-button"
 
                          class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-2 px-5 rounded-lg thisIsButton ">Completed</button>
                        </div>
@@ -163,7 +169,7 @@
                        <h1 class="text-[#00303c] font-normal text-sm mb-2 items-center justify-center ">Deadline <br> <span class="font-medium text-lg "> 21 March 2025</span></h1>
                        <!-- completed button -->
                         <button
-                        
+                         id="complete-button"
                          class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-2 px-5 rounded-lg   thisIsButton  ">Completed</button>
                        </div>
                    </div>
@@ -179,7 +185,7 @@
                        <h1 class="text-[#00303c] font-normal text-sm mb-2 items-center justify-center ">Deadline <br> <span class="font-medium text-lg "> 21 March 2025</span></h1>
                        <!-- completed button -->
                         <button
-                        
+                         id="complete-button"
                          class="bg-[#3752FD] text-lg font-bold  text-[#ffffff] py-2 px-5 rounded-lg   thisIsButton ">Completed</button>
                        </div>
                    </div>
@@ -189,8 +195,8 @@
              </div>
              <!-- 2nd dect -->
              
-                <div class="w-1/4 p-5 mr-3 shadow-md rounded-md bg-slate-300 ">
-                   <div class=" p-5 shadow-lg bg-slate-100 rounded-md ">
+                <div class="w-1/4 p-5 mr-3 shadow-md rounded-md bg-slate-100 ">
+                   <div class=" p-5 shadow-lg bg-slate-300 rounded-md ">
                     <div class="flex items-center justify-center text-center ">
                       <img class="p-2"  src="A5-Dev-Board/assets/activity.png" alt="">
                       <p class="text-[#00303C] font-medium text-sm">Activity Log</p>
@@ -199,12 +205,17 @@
                   </div>
                   <div class="text-center items-center justify-center ">
                      <button
+                     id="History-clear"
                       class="text-[#ffffff] font-medium text-sm px-5 py-3 bg-[#3752FD] rounded-lg  "
                      >Clear History</button>
                   </div>
                    </div>
                     <!-- comment option -->
-                    <div class=" mt-6 shadow-lg bg-slate-100 text-[#000000] text-sm font-bold rounded-md  ">dwerwewe</div>
+                    <div
+                    id="hidden-display"
+                     class=" mt-6 shadow-lg bg-slate-300 text-[#000000] text-sm font-bold rounded-md p-4  ">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, at.</p>
+                    </div>
                     
                 </div>
        
