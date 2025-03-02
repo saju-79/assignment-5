@@ -21,28 +21,73 @@ clickButton.addEventListener('click' , function(){
 
 });
 // number cromonnoi big 
-    const completedElements = document.querySelectorAll(".complete-button");
-   for(let btn of completedElements){
-    completedElements.addEventListener('click', function(event){
-      const amount = event.target.innerText === "+" ? 1 : -1 ;
-        console.log('hiiiiiiiiiii' , amount)
-    })
-   }
+const addTextmsg = [];
+const addNumber = 0;
+
+const completeButtons = document.querySelectorAll(".complete-button")
+for(let btn of completeButtons){
+   btn.addEventListener('click' , function(event){
+    const amount = event.target.innerText === "+" ? 1 : -1;
+    const mainNumber = document.getElementById('main-number');
+    const navberNumber = document.getElementById('navbar-number');
+    const currentMainNumber = parseInt(mainNumber.innerText);
+    const currenNavberNumvber = parseInt(navberNumber.innerText);
+    const newMainNumber = Math.max(0 , currentMainNumber + amount );
+       const  newNavberNumber = Math.max(0 , currenNavberNumvber - amount);
+        navberNumber.innerText = newNavberNumber;
+    mainNumber.innerText = newMainNumber;
+    // text section
+      
+       
+      let commitTexts = document.getElementById('hidden-display');
+      const div = document.createElement("div");
+      div.innerHTML = `
+      <p class"p-10"> you have completed the task Fix Mobile Button Issue at 1:32:34 Am  </P>
+      
+      `
+     commitTexts.appendChild(div)
+        
+     console.log(commitTexts.innerText)  
+    for (let s = 0; s < completeButtons.length; s++) {
+      const clickbtn2 = completeButtons[s]
+        if(clickbtn2.id  === event.target.id){
+              clickbtn2.style.backgroundColor = "#a0a2b4"
+              alert("Board updated successfully")
+              
+              commitTexts.innerText = commitTexts.innerText
+        }    
+      else{
+        
+        clickbtn2.style.backgroundColor = "#3752FD"
+      }
+    }
+          
+        
+         
+       
  
-    // const quantityElements = document.querySelectorAll(".quantity-button");
-// for (let btn of quantityElements) {
-//   btn.addEventListener("click", function (event) {
-//     const amount = event.target.innerText === "+" ? 1 : -1; // 1 || -1
-//     const quantityEelemnt = document.getElementById("quantity");
-//     const currentQuantity = parseInt(quantityEelemnt.innerText);
-//     const newQuantity = Math.max(0, currentQuantity + amount);
-//     quantityEelemnt.innerText = newQuantity;
-//   });
-// }
+
+      
+  
+   });
+}
+
+
+
+
+
+//
+//  comment text  section
+const addtexts = document.getElementById('completed-A').addEventListener('click' , function(){
+     const a = document.getElementById("A")
+             
+   }) 
+
+ 
+  
+
+
 // clear history  deleted
-
-
-document.getElementById("History-clear").addEventListener('click', function(){
-     console.log('hiiiiiiiiiiii');
-     document.getElementById('hidden-display').style.display = "none"
-});
+document.getElementById('History-clear').addEventListener('click' , function(){
+  document.getElementById('hidden-display').style.display = 'none'
+})
